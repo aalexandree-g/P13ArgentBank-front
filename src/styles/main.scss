@@ -1,0 +1,19 @@
+// variables
+@use './variables' as *;
+
+// components
+@use '../components/header/header';
+
+html {
+  font-family: $font-family;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: $text-color;
+  background-color: $dark-color;
+}
+
+body {
+  margin: 0 auto;
+  min-height: 100vh;
+}
