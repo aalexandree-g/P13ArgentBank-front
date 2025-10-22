@@ -5,7 +5,6 @@
   justify-content: space-between;
   align-items: center;
   padding: 5px 20px;
-  background-color: $light-color;
 
   &__logo {
     display: flex;
@@ -13,12 +12,13 @@
   }
 
   &__image {
+    max-width: 100%;
     width: 200px;
   }
 
   &__item {
     font-weight: bold;
-    margin-right: 0.5rem;
+    margin-right: 0.8rem;
     text-decoration: none;
     color: $text-color;
 

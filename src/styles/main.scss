@@ -1,8 +1,14 @@
 // variables
 @use './variables' as *;
 
+// pages
+@use '../pages/home/home';
+@use '../pages/login/login';
+@use '../pages/profile/profile';
+
 // components
 @use '../components/header/header';
+@use '../components/footer/footer';
 
 html {
   font-family: $font-family;
@@ -10,10 +16,14 @@ html {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: $text-color;
-  background-color: $dark-color;
 }
 
 body {
-  margin: 0 auto;
+  margin: 0;
+}
+
+#root {
   min-height: 100vh;
+  display: flex;
+  flex-direction: column;
 }

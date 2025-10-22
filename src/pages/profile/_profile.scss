@@ -1,0 +1,111 @@
+@use '../../styles/variables' as *;
+
+.header {
+  color: $light-color;
+  margin-bottom: 2rem;
+
+  &__edit-button {
+    border-color: $primary-color;
+    background-color: $primary-color;
+    color: $light-color;
+    font-weight: bold;
+    padding: 10px;
+    width: 100px;
+
+    &--cancel {
+      border-color: $grey-color;
+      background-color: $grey-color;
+      color: $heading-color;
+    }
+  }
+}
+
+.edit-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+
+  &__fields {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    input {
+      padding: 10px;
+      font-size: 1rem;
+      min-width: 150px;
+      text-align: center;
+      transition: border-color 0.2s ease;
+    }
+  }
+
+  &__buttons {
+    display: flex;
+    gap: 1rem;
+  }
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid black;
+  background-color: $light-color;
+  width: 80%;
+  margin: 0 auto;
+  flex-direction: column;
+  padding: 1.5rem;
+  box-sizing: border-box;
+  text-align: left;
+  margin-bottom: 2rem;
+
+  @media (min-width: 720px) {
+    flex-direction: row;
+  }
+
+  &__content {
+    width: 100%;
+    flex: 1;
+
+    @media (min-width: 720px) {
+      &.cta {
+        flex: 0;
+      }
+    }
+  }
+
+  &__title {
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+    font-weight: normal;
+  }
+
+  &__amount {
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
+  }
+
+  &__description {
+    margin: 0;
+  }
+
+  &__transaction-button {
+    display: block;
+    width: 100%;
+    padding: 8px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-top: 1rem;
+    border-color: $primary-color;
+    background-color: $primary-color;
+    color: $light-color;
+
+    @media (min-width: 720px) {
+      width: 200px;
+    }
+  }
+}

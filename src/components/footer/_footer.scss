@@ -1,0 +1,13 @@
+@use '../../styles/variables' as *;
+
+.footer {
+  display: flex;
+  justify-content: center;
+  border-top: 2px solid $grey-color;
+  padding: 2rem 0;
+}
+
+.footer-text {
+  margin: 0;
+  padding: 0;
+}
