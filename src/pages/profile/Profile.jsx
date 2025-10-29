@@ -30,11 +30,11 @@ const Profile = () => {
         firstName,
         lastName,
       })
-      dispatch(setProfile(updatedData.body)) // mise à jour Redux
+      dispatch(setProfile(updatedData.body))
       setIsEditing(false)
     } catch (error) {
       console.error('Erreur de mise à jour du profil :', error)
-      alert('Impossible de mettre à jour votre profil ❌')
+      alert('Impossible de mettre à jour votre profil')
     }
   }
 

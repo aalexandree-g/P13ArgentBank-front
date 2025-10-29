@@ -25,7 +25,7 @@ const Login = () => {
       navigate('/profile')
     } catch (error) {
       console.error(error)
-      alert('Erreur de connexion ❌')
+      alert('Erreur de connexion')
     }
   }
 
