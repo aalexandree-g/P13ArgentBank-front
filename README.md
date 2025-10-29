@@ -48,6 +48,13 @@ npm run dev
 
 Le site est disponible sur **http://localhost:5173**.
 
+#### Créer un fichier **`.env`** à la racine du dossier **P13ArgentBank-front**, y coller ceci et enregistrer :
+
+```bash
+# .env
+VITE_API_URL=http://localhost:3001/api/v1
+```
+
 ## 📖 Fonctionnalités
 
 | Module                    | Description                                                 |
