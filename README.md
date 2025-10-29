@@ -1,16 +1,58 @@
-# React + Vite
+# ArgentBank
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bienvenue dans **ArgentBank**, une application web permettant aux utilisateurs de gérer leurs comptes bancaires en toute sécurité : connexion, profil, transactions et suivi des soldes.
 
-Currently, two official plugins are available:
+Ce projet fait partie du parcours **OpenClassrooms "Développeur d'application JavaScript React"**.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## 💰 Contexte du projet
 
-## React Compiler
+**ArgentBank** est une banque fictive cherchant à moderniser son interface client.  
+L’objectif est de créer une application web sécurisée permettant à l’utilisateur de :
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Se connecter via un système d’authentification par token (JWT)
+- Consulter ses informations de profil
+- Modifier son prénom et son nom
+- Visualiser ses comptes et soldes
 
-## Expanding the ESLint configuration
+## 📦 Installation
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. Backend (API)
+
+Le backend est fourni par OpenClassrooms et doit être installé séparément.  
+Suivre les instructions sur le repo officiel : [ArgentBank API](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API).
+
+Par défaut, l’API tourne sur **http://localhost:3001**.
+
+---
+
+### 2. Frontend (ce projet)
+
+#### Cloner ce repository :
+
+```bash
+git clone https://github.com/aalexandree-g/P13ArgentBank-front.git
+cd P13ArgentBank-front
+```
+
+#### Installer les dépendances :
+
+```bash
+npm install
+```
+
+#### Lancer le projet en mode développement :
+
+```bash
+npm run dev
+```
+
+Le site est disponible sur **http://localhost:5173**.
+
+## 📖 Fonctionnalités
+
+| Module                    | Description                                                 |
+| ------------------------- | ----------------------------------------------------------- |
+| 🔐 **Authentification**   | Connexion via email et mot de passe (JWT)                   |
+| 👤 **Profil utilisateur** | Consultation et édition du nom/prénom                       |
+| 💳 **Comptes**            | Liste des comptes et soldes disponibles                     |
+| 📘 **Documentation API**  | Disponible via Swagger sur `http://localhost:3001/api-docs` |
