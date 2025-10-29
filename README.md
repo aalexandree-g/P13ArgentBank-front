@@ -21,7 +21,7 @@ L’objectif est de créer une application web sécurisée permettant à l’uti
 Le backend est fourni par OpenClassrooms et doit être installé séparément.  
 Suivre les instructions sur le repo officiel : [ArgentBank API](https://github.com/OpenClassrooms-Student-Center/Project-10-Bank-API).
 
-Par défaut, l’API tourne sur **http://localhost:3001**.
+> Par défaut, l’API tourne sur **http://localhost:3001**.
 
 ---
 
@@ -46,11 +46,16 @@ npm install
 npm run dev
 ```
 
-Le site est disponible sur **http://localhost:5173**.
+> Le site est disponible sur **http://localhost:5173**.
 
-#### Créer un fichier **`.env`** à la racine du dossier **P13ArgentBank-front**, y coller ceci et enregistrer :
+---
 
-```bash
+<br>
+
+⚠️ **Important** :  
+ Créer un fichier `.env` à la racine du dossier `P13ArgentBank-front`, y coller ceci et enregistrer :
+
+```js
 # .env
 VITE_API_URL=http://localhost:3001/api/v1
 ```
