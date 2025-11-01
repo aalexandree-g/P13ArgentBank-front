@@ -9,8 +9,8 @@ import Footer from '../../components/footer/Footer'
 const Profile = () => {
   const dispatch = useDispatch()
   const { token, profile } = useSelector((state) => state.user)
-  const [firstName, setFirstName] = useState(profile?.firstName || '')
-  const [lastName, setLastName] = useState(profile?.lastName || '')
+  const [firstName, setFirstName] = useState('')
+  const [lastName, setLastName] = useState('')
   const [isEditing, setIsEditing] = useState(false)
 
   const handleEditClick = () => {
